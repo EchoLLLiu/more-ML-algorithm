@@ -74,14 +74,18 @@ def bgd(alpha, X, Y, maxloop, epsilon):
             break
         count += 1
         
-        # n个参数计算，并存入thetas中
-        for j in range(n):
-            deriv = np.sum(np.dot(X[:,j].T, (h(theta, X) - Y))) / m
-            thetas[j].append(theta[j,0] - alpha*deriv)
-            
+        # n个参数计算，并存入thetas中(循环单独计算theta)
+        #for j in range(n):
+        #    deriv = np.sum(np.dot(X[:,j].T, (h(theta, X) - Y))) / m
+        #    thetas[j].append(theta[j,0] - alpha*deriv)
         # n个参数在当前theta中更新  
+        #for j in range(n):
+        #    theta[j,0] = thetas[j][-1]
+        
+        #同时计算theta
+        theta = theta - alpha * 1.0 / m * np.dot(X.T, (h(theta, X) - Y))
         for j in range(n):
-            theta[j,0] = thetas[j][-1]
+            thetas[j].append(theta[j,0])
             
         # 记录当前参数的函数代价，并存入costs
         cost = J(theta, X, Y)
