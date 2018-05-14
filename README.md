@@ -11,5 +11,5 @@
 &emsp;&emsp;&emsp;多元线性回归-LY.ipynb：多元线性回归算法的实现<br/>
 &emsp;&emsp;&emsp;utilsLY.py，多项式回归-LY.ipynb：多项式回归算法的实现<br/>
 
-#### ch01 : 逻辑回归<br/>
+#### ch03 : 逻辑回归<br/>
 &emsp;&emsp;&emsp;逻辑回归-LY.ipynb ：逻辑回归算法的实现<br/>
