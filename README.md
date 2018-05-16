@@ -13,3 +13,6 @@
 
 #### ch03 : 逻辑回归<br/>
 &emsp;&emsp;&emsp;逻辑回归-LY.ipynb ：逻辑回归算法的实现<br/>
+
+#### ch04 : 神经网络<br/>
+&emsp;&emsp;&emsp;NeuralNetwork.ipynb ：神经网络算法的实现<br/>
